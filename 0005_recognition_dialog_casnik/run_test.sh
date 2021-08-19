@@ -5,11 +5,14 @@ export PATH=$PATH:~/dLabPro/bin.release/
 echo "====================================================="
 echo "=============== Generated results ==================="
 
-recognizer -cfg recognizer.cfg filelist.flst -out res 2>/dev/null
-recognizer -cfg recognizer.cfg filelist.flst -out dbg 2>/dev/null | grep "dbg: rec nad:"
+recognizer -cfg recognizer.cfg filelist.flst -out res 2>/dev/null | tee generated.txt
+recognizer -cfg recognizer.cfg filelist.flst -out dbg 2>/dev/null | grep "dbg: rec nad:" | tee -a generated.txt
 
 echo "====================================================="
-echo "=============== Expected results ===================="
+echo "====== Compare with expected results ================"
 
-cat expected.txt
+diff --brief expected.txt generated.txt
+
+echo "======== No output means all ok ====================="
+echo "====================================================="
 
