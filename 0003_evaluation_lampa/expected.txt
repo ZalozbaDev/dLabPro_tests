@@ -1,0 +1,13 @@
+   Evaluation result:
+   - Time stamp     : 2021-08-19-085036 @ $HOSTNAME
+   - Model ID       : -1_-1
+   - Parameters     : 333.2 k
+   - Valid Gaussians: 1023/1024
+   - Sample time    : 13 s
+   - Performance    : 18 % real time
+   Word sequences   : 4/4 samples
+   - Correctness    : 100.0 % +-0.0 % 
+   - Accuracy       : 75.0 % +-16.7 %
+   - Lattice density: 1.250  +-0.167 
+   Time: 17 s
+
