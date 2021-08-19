@@ -1,0 +1,29 @@
+__WAKEUP__
+_TELLTIME_KAKJENAČASU
+__SLEEP__
+__WAKEUP__
+_TELLTIME_KAKNAČASUJE
+__SLEEP__
+__WAKEUP__
+_TELLTIME_KAKPOZDŹEJE
+__SLEEP__
+__WAKEUP__
+__SLEEP__
+__WAKEUP__
+__WAKEUP__
+__WAKEUP__
+dbg: rec nad: 0.04028 ned: 0.6949 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.03702 ned: 0.6831 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.02989 ned: 0.7971 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.04028 ned: 0.6949 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.03497 ned: 0.6493 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.02989 ned: 0.7971 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.04028 ned: 0.6949 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.05653 ned: 0.5827 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.02989 ned: 0.7971 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.04028 ned: 0.6949 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.02989 ned: 0.7971 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.1336 ned: 1 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.1606 ned: 0.9435 tnad: 0.06 tned: 0.9
+dbg: rec nad: 0.08084 ned: 1 tnad: 0.06 tned: 0.9
+
