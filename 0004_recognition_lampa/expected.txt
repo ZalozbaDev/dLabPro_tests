@@ -1,0 +1,9 @@
+_BRIGHTNESS_LAMPA_055_055PROCENTOW
+dbg: rec nad: 0.06245 ned: 0.7083 tnad: 0.4 tned: 0.99
+_BRIGHTNESS_LAMPA_055_055PROCENTOWPROŠU
+dbg: rec nad: 0.0526 ned: 0.6402 tnad: 0.4 tned: 0.99
+_BRIGHTNESS_LAMPA_080_080PROCENTOWPROŠU
+dbg: rec nad: 0.06815 ned: 0.632 tnad: 0.4 tned: 0.99
+_BRIGHTNESS_SWĚCA_015_015PROCENTOWPROŠU
+dbg: rec nad: 0.04949 ned: 0.4441 tnad: 0.4 tned: 0.99
+
