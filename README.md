@@ -13,6 +13,7 @@ Prerequisites:
 * 0004_recognition_lampa:         recognition run with smart lamp test data
 * 0005_recognition_dialog_casnik: recognition run with dialog test data
 * 0006_acoustic_model_adaptation: adaptation of German acoustic model to Upper Sorbian
+* 0007_corpus_generation:         generation of lexicon and other data from textual corpus
 
 # License
 
