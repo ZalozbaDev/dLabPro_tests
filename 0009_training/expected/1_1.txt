@@ -1,0 +1,18 @@
+   Evaluation result:
+   - Time stamp     : 2022-02-21-142840 @ $HOSTNAME
+   - Model ID       : -1_-1
+   - Parameters     : 72.4 k
+   - Valid Gaussians: 180/222
+   - Sample time    : 17 s
+   - Performance    : 0 % real time
+   Frame labels     : 5/5 samples (confidence level: 95 %)
+   - Correctness    : 45.8 % +-12.3 %
+   Label sequences  : 5/5 samples (confidence level: 95 %)
+   - Correctness    : 35.2 % +-8.1 % 
+   - Accuracy       : 26.0 % +-11.4 %
+   - Lattice density: 0.969  +-0.089 
+   Time: 2 s
+
+
+// HMM.xtp completed (0 errors).
+   - Evaluation results ok
