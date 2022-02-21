@@ -10,6 +10,10 @@ echo "=============== Generated results ==================="
 rm -rf uasr-data/db-hsb-asr/HSB-01/log
 mkdir -p uasr-data/db-hsb-asr/HSB-01/log
 
+# clean model dir
+rm -rf uasr-data/db-hsb-asr/HSB-01/model
+mkdir -p uasr-data/db-hsb-asr/HSB-01/model
+
 dlabpro $HOME/UASR/scripts/dlabpro/HMM.xtp trn uasr-data/db-hsb-asr/HSB-01/info/train.cfg
 
 echo "====================================================="
