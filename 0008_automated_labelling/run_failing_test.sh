@@ -7,19 +7,19 @@ echo "====================================================="
 echo "=============== Generated results ==================="
 
 # this directory shall always be empty each time the script is run
-rm -rf uasr-data/db-hsb-asr/common/lab
-mkdir -p uasr-data/db-hsb-asr/common/lab
+rm -rf uasr-data/db-hsb-asr/common/lab_bad
+mkdir -p uasr-data/db-hsb-asr/common/lab_bad
 
 # clean log dir
 rm -rf uasr-data/db-hsb-asr/HSB-01/log
 mkdir -p uasr-data/db-hsb-asr/HSB-01/log
 
-dlabpro $HOME/UASR/scripts/dlabpro/HMM.xtp lab uasr-data/db-hsb-asr/HSB-01/info/label_fail.cfg
+dlabpro $HOME/UASR/scripts/dlabpro/HMM.xtp lab uasr-data/db-hsb-asr/HSB-01/info/label_bad.cfg
 
 echo "====================================================="
 echo "====== Compare with expected results ================"
 
-diff -Naur expected/ uasr-data/db-hsb-asr/common/lab/
+diff -Naur expected_bad/ uasr-data/db-hsb-asr/common/lab_bad/
 
 echo "======== Small differences maybe ok ================="
 echo "====================================================="
