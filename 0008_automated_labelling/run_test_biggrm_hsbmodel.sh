@@ -19,7 +19,7 @@ dlabpro $HOME/UASR/scripts/dlabpro/HMM.xtp lab uasr-data/db-hsb-asr/HSB-01/info/
 echo "====================================================="
 echo "====== Compare with expected results ================"
 
-diff -Naur expected_bad/ uasr-data/db-hsb-asr/common/lab_biggrm_hsbmodel/
+diff -Naur expected_good/ uasr-data/db-hsb-asr/common/lab_biggrm_hsbmodel/
 
 echo "======== Small differences maybe ok ================="
 echo "====================================================="
