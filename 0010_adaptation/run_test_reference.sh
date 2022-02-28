@@ -22,3 +22,5 @@ echo "====== Compare with expected results ================"
 diff -u logfile_adaptation_test__reference.txt expected/logfile_adaptation_test__reference.txt
 
 
+echo "======== Small differences maybe ok ================="
+echo "====================================================="
