@@ -1,0 +1,84 @@
+   Evaluation result:
+   - Time stamp     : 2022-02-28-085537 @ $HOSTNAME
+   - Model ID       : -1_-1
+   - Parameters     : 289.5 k
+   - Valid Gaussians: 888/888
+   - Sample time    : 76 s
+   - Performance    : 8 % real time
+   Frame labels     : 20/20 samples (confidence level: 95 %)
+   - Correctness    : 66.8 % +-4.4 % 
+   Label sequences  : 20/20 samples (confidence level: 95 %)
+   - Correctness    : 58.0 % +-6.1 % 
+   - Accuracy       : 43.7 % +-7.6 % 
+   - Lattice density: 1.056  +-0.038 
+   Word sequences   : 20/20 samples
+   - Correctness    : 26.2 % +-8.6 % 
+   - Accuracy       : -124.4 % +-35.5 %
+   - Lattice density: 2.507  +-0.312 
+   Time: 29 s
+
+
+// HMM.xtp completed (0 errors).
+   - Evaluation results ok
+=============================== Above: Model 3_8 lexikon ===========================================================================================
+   Evaluation result:
+   - Time stamp     : 2022-02-28-085611 @ $HOSTNAME
+   - Model ID       : -1_-1
+   - Parameters     : 289.5 k
+   - Valid Gaussians: 888/888
+   - Sample time    : 76 s
+   - Performance    : 8 % real time
+   Frame labels     : 20/20 samples (confidence level: 95 %)
+   - Correctness    : 65.4 % +-3.3 % 
+   Label sequences  : 20/20 samples (confidence level: 95 %)
+   - Correctness    : 70.5 % +-4.6 % 
+   - Accuracy       : 60.4 % +-6.4 % 
+   - Lattice density: 1.025  +-0.045 
+   Word sequences   : 20/20 samples
+   - Correctness    : 42.7 % +-9.2 % 
+   - Accuracy       : -72.6 % +-27.1 %
+   - Lattice density: 2.153  +-0.214 
+   Time: 29 s
+
+
+// HMM.xtp completed (0 errors).
+   - Evaluation results ok
+=============================== Above: Model 3_8_A lexikon ===========================================================================================
+   Evaluation result:
+   - Time stamp     : 2022-02-28-085620 @ $HOSTNAME
+   - Model ID       : -1_-1
+   - Parameters     : 289.5 k
+   - Valid Gaussians: 888/888
+   - Sample time    : 76 s
+   - Performance    : 1 % real time
+   Frame labels     : 20/20 samples (confidence level: 95 %)
+   - Correctness    : 60.4 % +-2.8 % 
+   Label sequences  : 20/20 samples (confidence level: 95 %)
+   - Correctness    : 47.6 % +-4.2 % 
+   - Accuracy       : 25.2 % +-4.8 % 
+   - Lattice density: 1.168  +-0.048 
+   Time: 8 s
+
+
+// HMM.xtp completed (0 errors).
+   - Evaluation results ok
+=============================== Above: Model 3_8 free phoneme ===========================================================================================
+   Evaluation result:
+   - Time stamp     : 2022-02-28-085633 @ $HOSTNAME
+   - Model ID       : -1_-1
+   - Parameters     : 289.5 k
+   - Valid Gaussians: 888/888
+   - Sample time    : 76 s
+   - Performance    : 1 % real time
+   Frame labels     : 20/20 samples (confidence level: 95 %)
+   - Correctness    : 62.4 % +-3.4 % 
+   Label sequences  : 20/20 samples (confidence level: 95 %)
+   - Correctness    : 61.5 % +-3.3 % 
+   - Accuracy       : 48.3 % +-4.3 % 
+   - Lattice density: 1.051  +-0.048 
+   Time: 8 s
+
+
+// HMM.xtp completed (0 errors).
+   - Evaluation results ok
+=============================== Above: Model 3_8_A free phoneme ===========================================================================================
