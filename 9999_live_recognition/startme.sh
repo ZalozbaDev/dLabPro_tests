@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PATH=$PATH:~/dLabPro/bin.release/
+# export PATH=$PATH:~/dLabPro/bin.release/
 
 # sound card now defined in config (by name)
-./recognizer -cfg recognizer.cfg -out vad
+sudo ~/dLabPro/bin.release/recognizer -cfg recognizer.cfg -out vad | grep -v pF
