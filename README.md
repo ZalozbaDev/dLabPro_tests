@@ -15,6 +15,10 @@ Prerequisites:
 * 0006_acoustic_model_adaptation: adaptation of German acoustic model to Upper Sorbian
 * 0007_corpus_generation:         generation of lexicon and other data from textual corpus
 * 0008_automated_labelling:       automated labelling of audio files
+* 0009_training:                  training of an acoustic model from scratch
+* 0010_adaptation:                speaker-dependent adaptation of an acoustic model
+* 0011_word_class_grammar_merge:  test combination of word class definition and an existing CFG
+
 
 # License
 
