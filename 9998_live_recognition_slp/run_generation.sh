@@ -16,17 +16,35 @@ if ! [ -e web_monolingual.hsb ]; then
 	gunzip web_monolingual.hsb.gz
 fi
 
+function normalize {
+	OUTDIR=$1-nrm
+	echo "Processing $1 - store in $OUTDIR"
+	rm -rf $OUTDIR/*
+	mkdir -p $OUTDIR
+	
+	cp $1              $OUTDIR
+	
+	cd $OUTDIR
+	
+	# upper case
+	sed -e 's/\(.*\)/\U\1/' $1 > $1.norm.tmp1
+	# remove special characters
+	sed -e 's/-//g' -e 's/"//g' -e 's/,//g' -e 's/\.//g' -e 's/\?//g' -e 's/\!//g' -e 's/–//g' -e 's/„//g' -e 's/“//g' $1.norm.tmp1 > $1.norm
+	
+	cd ..
+}
+
 function generate_lexica {
 	OUTDIR=$1-lex
 	echo "Processing $1 - store in $OUTDIR"
 	rm -rf $OUTDIR/*
 	mkdir -p $OUTDIR
 	
-	cp $1              $OUTDIR
+	cp $1-nrm/$1.norm  $OUTDIR
 	cp tools/*         $OUTDIR
 	cp phoneme_rules/* $OUTDIR
 	
-	sed -i s/smartlamp.corp/$1/ $OUTDIR/HSB.yaml
+	sed -i s/smartlamp.corp/$1.norm/ $OUTDIR/HSB.yaml
 	
 	cd $OUTDIR 
 	
@@ -41,13 +59,13 @@ function create_trigrams {
 	rm -rf $OUTDIR/*
 	mkdir -p $OUTDIR
 	
-	cp $1                      $OUTDIR
+	cp $1-nrm/$1.norm          $OUTDIR
 	cp $1-lex/corpus/hsb.vocab $OUTDIR
 	
 	cd $OUTDIR/
 	
 	ngramsymbols --OOV_symbol="<unk>" hsb.vocab hsb.syms
-	farcompilestrings --fst_type=compact --symbols=hsb.syms --keep_symbols --unknown_symbol="<unk>" $1 hsb.far
+	farcompilestrings --fst_type=compact --symbols=hsb.syms --keep_symbols --unknown_symbol="<unk>" $1.norm hsb.far
 	ngramcount --order=3 hsb.far hsb.cnts
 	
 	ngrammake --backoff --method=witten_bell hsb.cnts hsb.mod
@@ -72,6 +90,10 @@ function convert_fst {
 	
 	cd ..
 }
+
+normalize smartlamp.corp
+normalize cv.hsb
+
 
 # generate_lexica sorbian_institute_monolingual.hsb
 # generate_lexica witaj_monolingual.hsb
