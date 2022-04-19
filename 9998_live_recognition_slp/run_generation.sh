@@ -142,16 +142,16 @@ function package_recognizer {
 	cp $1-lex/uasr_configurations/lexicon/hsb_sampa.ulex $OUTDIR/uasr-data/db-hsb-asr/common/lex/hsb.ulex
 	
 	# language model
-	mkdir -p $OUTDIR/uasr-data/db-hsb-asr/grammatics/word_class_lm/lm/
-	cp $1-con/hsb.txt_ofst.txt    $OUTDIR/uasr-data/db-hsb-asr/grammatics/word_class_lm/lm/
-	cp $1-con/hsb.txt_ofst_is.txt $OUTDIR/uasr-data/db-hsb-asr/grammatics/word_class_lm/lm/
-	cp $1-con/hsb.txt_ofst_os.txt $OUTDIR/uasr-data/db-hsb-asr/grammatics/word_class_lm/lm/
+	mkdir -p $OUTDIR/uasr-data/db-hsb-asr/common/lm/
+	cp $1-con/hsb.txt_ofst.txt    $OUTDIR/uasr-data/db-hsb-asr/common/lm/
+	cp $1-con/hsb.txt_ofst_is.txt $OUTDIR/uasr-data/db-hsb-asr/common/lm/
+	cp $1-con/hsb.txt_ofst_os.txt $OUTDIR/uasr-data/db-hsb-asr/common/lm/
 	
 	cp cfg/package.cfg $OUTDIR
 	
 	cd $OUTDIR
 
-	UASR_HOME=uasr $HOME/dLabPro/bin.release/dlabpro $HOME/UASR/scripts/dlabpro/tools/REC_PACKDATA.xtp rec package.cfg
+	UASR_HOME=uasr $HOME/dLabPro/bin.release/dlabpro $HOME/UASR/scripts/dlabpro/tools/REC_PACKDATA.xtp rec package.cfg -v2
 	
 	cd ..
 }
@@ -161,7 +161,6 @@ normalize witaj_monolingual.hsb
 normalize web_monolingual.hsb
 normalize smartlamp.corp
 normalize cv.hsb
-
 
 generate_lexica sorbian_institute_monolingual.hsb
 generate_lexica witaj_monolingual.hsb
@@ -183,3 +182,6 @@ convert_fst web_monolingual.hsb
 convert_fst cv.hsb
 
 package_recognizer sorbian_institute_monolingual.hsb
+package_recognizer witaj_monolingual.hsb
+package_recognizer web_monolingual.hsb
+package_recognizer cv.hsb
