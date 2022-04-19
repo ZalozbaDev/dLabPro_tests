@@ -76,11 +76,14 @@ function convert_fst {
 # generate_lexica sorbian_institute_monolingual.hsb
 # generate_lexica witaj_monolingual.hsb
 # generate_lexica web_monolingual.hsb
+generate_lexica smartlamp.corp
 generate_lexica cv.hsb
 
 #create_trigrams sorbian_institute_monolingual.hsb
 #create_trigrams witaj_monolingual.hsb
 #create_trigrams web_monolingual.hsb
+create_trigrams smartlamp.corp
 create_trigrams cv.hsb
 
+convert_fst smartlamp.corp
 convert_fst cv.hsb
