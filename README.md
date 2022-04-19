@@ -20,6 +20,12 @@ Prerequisites:
 * 0011_word_class_grammar_merge:                     test combination of word class definition and an existing CFG
 * 0012_statistical_language_model_with_word_classes: test recognition using a statistical language model plus word classes
 
+# Development and use cases
+
+* 9998_live_recognition_slp:                         check performace using statistical language models and adapted acoustic models
+* 9999_live_recognition_word_loop_grammar:           check performance using word loop grammar and adapted acoustic models
+
+
 # License
 
 See file "LICENSE".
