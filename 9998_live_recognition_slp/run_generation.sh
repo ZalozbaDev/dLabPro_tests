@@ -22,11 +22,17 @@ function generate_lexica {
 	rm -rf $OUTDIR/*
 	mkdir -p $OUTDIR
 	
-	cp tools/*        $OUTDIR
-	cp phoneme_rules* $OUTDIR
+	cp $1              $OUTDIR
+	cp tools/*         $OUTDIR
+	cp phoneme_rules/* $OUTDIR
 	
-	sed -e s/smartlamp.corp/$1/ $OUTDIR/HSB.yaml
-	cd $OUTDIR && python3 BASgenerator.py HSB.yaml
+	sed -i s/smartlamp.corp/$1/ $OUTDIR/HSB.yaml
+	
+	cd $OUTDIR 
+	
+	python3 BASgenerator.py HSB.yaml 
+	
+	cd ..
 }
 
 function create_trigrams {
@@ -35,18 +41,29 @@ function create_trigrams {
 	rm -rf $OUTDIR/*
 	mkdir -p $OUTDIR
 	
-	ngramsymbols --OOV_symbol="<unk>" $1 $OUTDIR/$1.syms
-	farcompilestrings --fst_type=compact --symbols=$OUTDIR/$1.syms --keep_symbols --unknown_symbol="<unk>" $1 lm/hsb.far
+	cp $1                      $OUTDIR
+	cp $1-lex/corpus/hsb.vocab $OUTDIR
+	
+	cd $OUTDIR/
+	
+	ngramsymbols --OOV_symbol="<unk>" hsb.vocab hsb.syms
+	farcompilestrings --fst_type=compact --symbols=hsb.syms --keep_symbols --unknown_symbol="<unk>" $1 hsb.far
+	ngramcount --order=3 hsb.far hsb.cnts
+	
+	ngrammake --backoff --method=witten_bell hsb.cnts hsb.mod
+	ngramshrink --method=relative_entropy --theta=1.0e-7 hsb.mod hsb.pru
+	
+	cd ..
 }
 
 
 
-generate_lexica sorbian_institute_monolingual.hsb
-generate_lexica witaj_monolingual.hsb
-generate_lexica web_monolingual.hsb
+# generate_lexica sorbian_institute_monolingual.hsb
+# generate_lexica witaj_monolingual.hsb
+# generate_lexica web_monolingual.hsb
 generate_lexica cv.hsb
 
 #create_trigrams sorbian_institute_monolingual.hsb
 #create_trigrams witaj_monolingual.hsb
 #create_trigrams web_monolingual.hsb
-#create_trigrams cv.hsb
+create_trigrams cv.hsb
