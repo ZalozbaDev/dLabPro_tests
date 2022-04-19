@@ -128,25 +128,58 @@ function convert_fst {
 	cd ..
 }
 
-normalize sorbian_institute_monolingual.hsb
+function package_recognizer {
+	OUTDIR=$1-rec
+	echo "Processing $1 - store in $OUTDIR"
+	rm -rf $OUTDIR/*
+	mkdir -p $OUTDIR
+	
+	# acoustic model
+	cp -r uasr-data $OUTDIR
+	
+	# lexicon
+	mkdir -p $OUTDIR/uasr-data/db-hsb-asr/common/lex/
+	cp $1-lex/uasr_configurations/lexicon/hsb_sampa.ulex $OUTDIR/uasr-data/db-hsb-asr/common/lex/hsb.ulex
+	
+	# language model
+	mkdir -p $OUTDIR/uasr-data/db-hsb-asr/grammatics/word_class_lm/lm/
+	cp $1-con/hsb.txt_ofst.txt    $OUTDIR/uasr-data/db-hsb-asr/grammatics/word_class_lm/lm/
+	cp $1-con/hsb.txt_ofst_is.txt $OUTDIR/uasr-data/db-hsb-asr/grammatics/word_class_lm/lm/
+	cp $1-con/hsb.txt_ofst_os.txt $OUTDIR/uasr-data/db-hsb-asr/grammatics/word_class_lm/lm/
+	
+	cp cfg/package.cfg $OUTDIR
+	
+	cd $OUTDIR
 
+	UASR_HOME=uasr $HOME/dLabPro/bin.release/dlabpro $HOME/UASR/scripts/dlabpro/tools/REC_PACKDATA.xtp rec package.cfg
+	
+	cd ..
+}
+
+normalize sorbian_institute_monolingual.hsb
+normalize witaj_monolingual.hsb
+normalize web_monolingual.hsb
 normalize smartlamp.corp
 normalize cv.hsb
 
 
 generate_lexica sorbian_institute_monolingual.hsb
-# generate_lexica witaj_monolingual.hsb
-# generate_lexica web_monolingual.hsb
+generate_lexica witaj_monolingual.hsb
+generate_lexica web_monolingual.hsb
 generate_lexica smartlamp.corp
 generate_lexica cv.hsb
 
 create_trigrams sorbian_institute_monolingual.hsb
-#create_trigrams witaj_monolingual.hsb
-#create_trigrams web_monolingual.hsb
+create_trigrams witaj_monolingual.hsb
+create_trigrams web_monolingual.hsb
 create_trigrams smartlamp.corp
 create_trigrams cv.hsb
 
-convert_fst sorbian_institute_monolingual.hsb
+# single corpora language models
 
-convert_fst smartlamp.corp
+convert_fst sorbian_institute_monolingual.hsb
+convert_fst witaj_monolingual.hsb
+convert_fst web_monolingual.hsb
 convert_fst cv.hsb
+
+package_recognizer sorbian_institute_monolingual.hsb
