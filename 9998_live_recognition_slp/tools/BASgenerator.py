@@ -123,7 +123,8 @@ def addq(lex):
       return: Modified lexicon
     """
     def addq1(ps):
-        return ps+[['Q']+p for p in ps if p[0] in vowels]
+        # print (ps)
+        return ps+[['Q']+p for p in ps if ((p) and (p[0] in vowels))]
     return {w: addq1(ps) for w, ps in lex.items()}
 
 # Print iterations progress
