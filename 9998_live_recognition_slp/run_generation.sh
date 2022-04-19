@@ -28,9 +28,46 @@ function normalize {
 	
 	# upper case
 	sed -e 's/\(.*\)/\U\1/' $1 > $1.norm.tmp1
-	# remove special characters
-	sed -e 's/-//g' -e 's/"//g' -e 's/,//g' -e 's/\.//g' -e 's/\?//g' -e 's/\!//g' -e 's/–//g' -e 's/„//g' -e 's/“//g' $1.norm.tmp1 > $1.norm
 	
+	# remove whole sentences that we don't normalize right now
+	
+	# digits
+	(cat $1.norm.tmp1 | grep -v '[[:digit:]]') > $1.norm.tmp2
+
+	# curly braces (no word classes here)
+	(cat $1.norm.tmp2 | grep -v '{' | grep -v '}') > $1.norm.tmp3
+	
+	# normal braces
+	(cat $1.norm.tmp3 | grep -v '(' | grep -v ')') > $1.norm.tmp4
+	
+	# rect braces
+	(cat $1.norm.tmp4 | grep -v '\[' | grep -v '\]') > $1.norm.tmp5
+	
+	# umlauts
+	(cat $1.norm.tmp5 | grep -v 'Ä' | grep -v 'Ö' | grep -v 'Ü' | grep -v 'ß') > $1.norm.tmp6
+	
+	
+	# remove special characters but keep sentences
+	sed -e 's/-//g'  -e 's/"//g'  -e 's/,//g'  -e 's/\.//g' -e 's/\?//g' \
+	    -e 's/\!//g' -e 's/–//g'  -e 's/„//g'  -e 's/“//g'  -e "s/'//g"  \
+	    -e 's/\///g' -e 's/://g'  -e 's/;//g'  -e 's/*//g'  -e 's/_//g'  \
+	    -e 's/”//g'  -e 's/»//g'  -e 's/«//g'  -e 's/‚//g'  -e 's/‘//g'  \
+	    -e 's/<//g'  -e 's/>//g'  -e 's/=//g'  -e 's/&//g'  -e 's/|//g'  \
+	    -e 's/…//g'  -e 's/#//g'  -e 's/’//g'  -e 's/+//g'  -e 's/•//g'  \
+	    -e 's/\^//g' -e 's/¹//g'  -e 's/■//g'  -e 's/\\//g' -e 's/¿//g'  \
+	    -e 's/©//g'  -e 's/%//g'  -e 's/§//g'  -e 's/¯//g'  -e 's/´//g'  \
+	    -e 's/@//g'  -e 's/~//g'  -e 's/∞//g'  -e 's/‛//g'  -e 's/˝//g'  \
+	    -e 's/`//g'  -e 's/−//g'  -e 's/†//g'  -e 's/®//g'  -e 's/�//g'  \
+	    -e 's/\xC2\xA0//g' \
+	    $1.norm.tmp6 > $1.norm
+	    
+	# -e 's/\=//g' -e 's/\&//g' -e 's/\|//g'
+	    
+	# sanity check: no lines should match this anymore
+	cat $1.norm | sed -e 's/\w//g' | sed '/^[[:space:]]*$/d'
+	
+	echo "If you see output above, file $1.norm is NOT properly normalized!"
+	    
 	cd ..
 }
 
@@ -91,21 +128,25 @@ function convert_fst {
 	cd ..
 }
 
+normalize sorbian_institute_monolingual.hsb
+
 normalize smartlamp.corp
 normalize cv.hsb
 
 
-# generate_lexica sorbian_institute_monolingual.hsb
+generate_lexica sorbian_institute_monolingual.hsb
 # generate_lexica witaj_monolingual.hsb
 # generate_lexica web_monolingual.hsb
 generate_lexica smartlamp.corp
 generate_lexica cv.hsb
 
-#create_trigrams sorbian_institute_monolingual.hsb
+create_trigrams sorbian_institute_monolingual.hsb
 #create_trigrams witaj_monolingual.hsb
 #create_trigrams web_monolingual.hsb
 create_trigrams smartlamp.corp
 create_trigrams cv.hsb
+
+convert_fst sorbian_institute_monolingual.hsb
 
 convert_fst smartlamp.corp
 convert_fst cv.hsb
