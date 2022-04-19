@@ -56,7 +56,22 @@ function create_trigrams {
 	cd ..
 }
 
-
+function convert_fst {
+	OUTDIR=$1-con
+	echo "Processing $1 - store in $OUTDIR"
+	rm -rf $OUTDIR/*
+	mkdir -p $OUTDIR
+	
+	cp $1-tri/hsb.pru  $OUTDIR
+	cp tools/*         $OUTDIR
+	
+	cd $OUTDIR
+	
+	fstprint hsb.pru > hsb.txt
+	python3 grmmerge.py -ofstin hsb.txt
+	
+	cd ..
+}
 
 # generate_lexica sorbian_institute_monolingual.hsb
 # generate_lexica witaj_monolingual.hsb
@@ -67,3 +82,5 @@ generate_lexica cv.hsb
 #create_trigrams witaj_monolingual.hsb
 #create_trigrams web_monolingual.hsb
 create_trigrams cv.hsb
+
+convert_fst cv.hsb
