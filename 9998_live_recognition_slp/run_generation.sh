@@ -90,7 +90,7 @@ function generate_lexica {
 	cd ..
 }
 
-function create_trigrams {
+function create_ngrams {
 	OUTDIR=$1-tri
 	echo "Processing $1 - store in $OUTDIR"
 	rm -rf $OUTDIR/*
@@ -103,10 +103,14 @@ function create_trigrams {
 	
 	ngramsymbols --OOV_symbol="<unk>" hsb.vocab hsb.syms
 	farcompilestrings --fst_type=compact --symbols=hsb.syms --keep_symbols --unknown_symbol="<unk>" $1.norm hsb.far
-	ngramcount --order=3 hsb.far hsb.cnts
 	
+	echo "Create ngrams with order $3"
+	ngramcount --order=$3 hsb.far hsb.cnts
+	
+	echo "Shrinking with parameter $2"
 	ngrammake --backoff --method=witten_bell hsb.cnts hsb.mod
-	ngramshrink --method=relative_entropy --theta=1.0e-7 hsb.mod hsb.pru
+	ngramshrink --method=relative_entropy --theta=$2 hsb.mod hsb.pru
+	ls -l hsb.mod hsb.pru
 	
 	cd ..
 }
@@ -168,20 +172,27 @@ generate_lexica web_monolingual.hsb
 generate_lexica smartlamp.corp
 generate_lexica cv.hsb
 
-create_trigrams sorbian_institute_monolingual.hsb
-create_trigrams witaj_monolingual.hsb
-create_trigrams web_monolingual.hsb
-create_trigrams smartlamp.corp
-create_trigrams cv.hsb
+# theta == 1.0e-7  --> resulting model way too big for a big corpus
+# theta == 0.00015 --> significant reduction 
+
+create_ngrams sorbian_institute_monolingual.hsb 0.00015 3
+create_ngrams witaj_monolingual.hsb 0.00015 3
+create_ngrams web_monolingual.hsb 0.00015 3
+create_ngrams smartlamp.corp 1.0e-7 3
+create_ngrams cv.hsb 0.00015 3
 
 # single corpora language models
 
 convert_fst sorbian_institute_monolingual.hsb
 convert_fst witaj_monolingual.hsb
 convert_fst web_monolingual.hsb
+convert_fst smartlamp.corp
 convert_fst cv.hsb
 
-package_recognizer sorbian_institute_monolingual.hsb
-package_recognizer witaj_monolingual.hsb
-package_recognizer web_monolingual.hsb
+# reverse order due to complexity
+package_recognizer smartlamp.corp
 package_recognizer cv.hsb
+package_recognizer web_monolingual.hsb
+package_recognizer witaj_monolingual.hsb
+package_recognizer sorbian_institute_monolingual.hsb
+
