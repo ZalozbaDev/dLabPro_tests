@@ -1,0 +1,334 @@
+LEX: A	(.|#|)a(.|#|)
+LEX: A	(.|#|)Qa(.|#|)
+LEX: BARBU	(.|#|)barbu(.|#|)
+LEX: BOLA	(.|#|)bOla(.|#|)
+LEX: BUDŹ	(.|#|)butS(.|#|)
+LEX: BUDŹ	(.|#|)budZ(.|#|)
+LEX: BĚŁE	(.|#|)bjiwE(.|#|)
+LEX: BĚŁU	(.|#|)bjiwu(.|#|)
+LEX: CEĆI	(.|#|)tsEtSi(.|#|)
+LEX: CHCU	(.|#|)tsu(.|#|)
+LEX: CHCU	(.|#|)xtsu(.|#|)
+LEX: CHŁÓDNO	(.|#|)xwUdnO(.|#|)
+LEX: CHŁÓDNOBĚŁE	(.|#|)xwUdnObjiwE(.|#|)
+LEX: CHŁÓDNOBĚŁU	(.|#|)xwUdnObjiwu(.|#|)
+LEX: CYLE	(.|#|)ts1lE(.|#|)
+LEX: DAJ	(.|#|)daj(.|#|)
+LEX: DOSĆ	(.|#|)dOstS(.|#|)
+LEX: DWA	(.|#|)dwa(.|#|)
+LEX: DWAJ	(.|#|)dwaj(.|#|)
+LEX: DŹAKUJU	(.|#|)dZakuju(.|#|)
+LEX: DŹESAT	(.|#|)dZEsat(.|#|)
+LEX: DŹESAĆ	(.|#|)dZEsatS(.|#|)
+LEX: DŹEWJAT	(.|#|)dZEujat(.|#|)
+LEX: DŹEWJAT	(.|#|)dZEwjat(.|#|)
+LEX: DŹEWJEĆ	(.|#|)dZEujEtS(.|#|)
+LEX: DŹEWJEĆ	(.|#|)dZEwjEtS(.|#|)
+LEX: DŹI	(.|#|)dZi(.|#|)
+LEX: HASNYĆ	(.|#|)hasn1tS(.|#|)
+LEX: HASŃ	(.|#|)has(.|#|)
+LEX: HASŃ	(.|#|)hasjn(.|#|)
+LEX: HASŃĆ	(.|#|)hasjntS(.|#|)
+LEX: HOTOWY	(.|#|)hOtow1(.|#|)
+LEX: HOTOWY	(.|#|)hOtOw1(.|#|)
+LEX: JE	(.|#|)jE(.|#|)
+LEX: JEDYN	(.|#|)jEd1n(.|#|)
+LEX: JĚD	(.|#|)jjit(.|#|)
+LEX: JĚD	(.|#|)jjid(.|#|)
+LEX: KAK	(.|#|)kak(.|#|)
+LEX: KAŽ	(.|#|)kaS(.|#|)
+LEX: KAŽ	(.|#|)kaZ(.|#|)
+LEX: KUS	(.|#|)kus(.|#|)
+LEX: KUSK	(.|#|)kusk(.|#|)
+LEX: LAMPA	(.|#|)lampa(.|#|)
+LEX: LAMPU	(.|#|)lampu(.|#|)
+LEX: LUBA	(.|#|)luba(.|#|)
+LEX: MI	(.|#|)mi(.|#|)
+LEX: MJENJE	(.|#|)mjEnjE(.|#|)
+LEX: MÓDRE	(.|#|)mUdrE(.|#|)
+LEX: MÓDRU	(.|#|)mUdru(.|#|)
+LEX: MÓŽNO	(.|#|)mUZnO(.|#|)
+LEX: NA	(.|#|)na(.|#|)
+LEX: NAJSWĚTLIŠO	(.|#|)najsujitliSO(.|#|)
+LEX: NAJSWĚTLIŠO	(.|#|)najswjitliSO(.|#|)
+LEX: NAĆE	(.|#|)natSE(.|#|)
+LEX: NIČO	(.|#|)nitSO(.|#|)
+LEX: NJESPÓZNAJU	(.|#|)njEspUznaju(.|#|)
+LEX: NJEWIDŹU	(.|#|)njEwidZu(.|#|)
+LEX: NĚTKO	(.|#|)njitkO(.|#|)
+LEX: ON	(.|#|)On(.|#|)
+LEX: ON	(.|#|)QOn(.|#|)
+LEX: ORANŽ	(.|#|)OranS(.|#|)
+LEX: ORANŽ	(.|#|)OranZ(.|#|)
+LEX: ORANŽ	(.|#|)QOranS(.|#|)
+LEX: ORANŽ	(.|#|)QOranZ(.|#|)
+LEX: ORANŽOWE	(.|#|)OranZowE(.|#|)
+LEX: ORANŽOWE	(.|#|)OranZOwE(.|#|)
+LEX: ORANŽOWE	(.|#|)QOranZowE(.|#|)
+LEX: ORANŽOWE	(.|#|)QOranZOwE(.|#|)
+LEX: ORANŽOWU	(.|#|)OranZowu(.|#|)
+LEX: ORANŽOWU	(.|#|)OranZOwu(.|#|)
+LEX: ORANŽOWU	(.|#|)QOranZowu(.|#|)
+LEX: ORANŽOWU	(.|#|)QOranZOwu(.|#|)
+LEX: PJAT	(.|#|)pjat(.|#|)
+LEX: PJEĆ	(.|#|)pjEtS(.|#|)
+LEX: POKAZAJ	(.|#|)pOkazaj(.|#|)
+LEX: POKAŽ	(.|#|)pOkaS(.|#|)
+LEX: POKAŽ	(.|#|)pOkaZ(.|#|)
+LEX: POZDŹE	(.|#|)pOzdZE(.|#|)
+LEX: POŁSTA	(.|#|)pousta(.|#|)
+LEX: POŁSTA	(.|#|)pOwsta(.|#|)
+LEX: PROCENTOW	(.|#|)prOtsEnto(.|#|)
+LEX: PROCENTOW	(.|#|)prOtsEntOw(.|#|)
+LEX: PROŠU	(.|#|)prOSu(.|#|)
+LEX: PŘE	(.|#|)pSE(.|#|)
+LEX: PŘECO	(.|#|)pSEtsO(.|#|)
+LEX: PŘITULNU	(.|#|)pSitulnu(.|#|)
+LEX: RADY	(.|#|)rad1(.|#|)
+LEX: ROMANTIKI	(.|#|)rOmantiki(.|#|)
+LEX: ROMANTIKU	(.|#|)rOmantiku(.|#|)
+LEX: ROMANTISCE	(.|#|)rOmantistsE(.|#|)
+LEX: SO	(.|#|)sO(.|#|)
+LEX: SPAĆ	(.|#|)spatS(.|#|)
+LEX: STO	(.|#|)stO(.|#|)
+LEX: SWĚCA	(.|#|)sujitsa(.|#|)
+LEX: SWĚCA	(.|#|)swjitsa(.|#|)
+LEX: SWĚCU	(.|#|)sujitsu(.|#|)
+LEX: SWĚCU	(.|#|)swjitsu(.|#|)
+LEX: SWĚTLIŠO	(.|#|)sujitliSO(.|#|)
+LEX: SWĚTLIŠO	(.|#|)swjitliSO(.|#|)
+LEX: SWĚTŁA	(.|#|)sujitwa(.|#|)
+LEX: SWĚTŁA	(.|#|)swjitwa(.|#|)
+LEX: SWĚTŁO	(.|#|)sujitwO(.|#|)
+LEX: SWĚTŁO	(.|#|)swjitwO(.|#|)
+LEX: SWĚĆ	(.|#|)sujitS(.|#|)
+LEX: SWĚĆ	(.|#|)swjitS(.|#|)
+LEX: SYDOM	(.|#|)s1dOm(.|#|)
+LEX: SYM	(.|#|)s1m(.|#|)
+LEX: SŁÓNCO	(.|#|)swUntsO(.|#|)
+LEX: TAK	(.|#|)tak(.|#|)
+LEX: TRJEBAM	(.|#|)trjEbam(.|#|)
+LEX: TROŠKU	(.|#|)trOSku(.|#|)
+LEX: TŘI	(.|#|)ttsi(.|#|)
+LEX: TŘI	(.|#|)tSi(.|#|)
+LEX: WONKA	(.|#|)wOnka(.|#|)
+LEX: WOSOM	(.|#|)wOsOm(.|#|)
+LEX: WOČI	(.|#|)wOtSi(.|#|)
+LEX: WŠO	(.|#|)SO(.|#|)
+LEX: WŠO	(.|#|)wSO(.|#|)
+LEX: Z	(.|#|)s(.|#|)
+LEX: Z	(.|#|)z(.|#|)
+LEX: ZASWĚĆ	(.|#|)zasujitS(.|#|)
+LEX: ZASWĚĆ	(.|#|)zaswjitS(.|#|)
+LEX: ZASWĚĆIĆ	(.|#|)zasujitSitS(.|#|)
+LEX: ZASWĚĆIĆ	(.|#|)zaswjitSitS(.|#|)
+LEX: ZAĆĚMNI	(.|#|)zatSjimni(.|#|)
+LEX: ZAĆĚMŃ	(.|#|)zatSjimjn(.|#|)
+LEX: ZELENE	(.|#|)zElEnE(.|#|)
+LEX: ZELENU	(.|#|)zElEnu(.|#|)
+LEX: ZMĚROM	(.|#|)zmjirOm(.|#|)
+LEX: ZYMNO	(.|#|)z1mnO(.|#|)
+LEX: ZYMNOBĚŁE	(.|#|)z1mnObjiwE(.|#|)
+LEX: ZYMNOBĚŁU	(.|#|)z1mnObjiwu(.|#|)
+LEX: ZYMNU	(.|#|)z1mnu(.|#|)
+LEX: ĆIŃ	(.|#|)tSin(.|#|)
+LEX: ĆIŃ	(.|#|)tSijn(.|#|)
+LEX: ĆMA	(.|#|)tSma(.|#|)
+LEX: ĆOPŁO	(.|#|)tSOpwO(.|#|)
+LEX: ĆOPŁOBĚŁE	(.|#|)tSOpwObjiwE(.|#|)
+LEX: ĆOPŁOBĚŁU	(.|#|)tSOpwObjiwu(.|#|)
+LEX: ĆOPŁU	(.|#|)tSOpwu(.|#|)
+LEX: ĆĚMNIŠO	(.|#|)tSjimniSO(.|#|)
+LEX: ČASU	(.|#|)tSasu(.|#|)
+LEX: ČERWJENE	(.|#|)tSErjEnE(.|#|)
+LEX: ČERWJENE	(.|#|)tSErwjEnE(.|#|)
+LEX: ČERWJENU	(.|#|)tSErjEnu(.|#|)
+LEX: ČERWJENU	(.|#|)tSErwjEnu(.|#|)
+LEX: ČIMOL	(.|#|)tSimOl(.|#|)
+LEX: ČIN	(.|#|)tSin(.|#|)
+LEX: ČITANJOM	(.|#|)tSitanjOm(.|#|)
+LEX: ČITAĆ	(.|#|)tSitatS(.|#|)
+LEX: ČMOWŠO	(.|#|)tSmouSO(.|#|)
+LEX: ČMOWŠO	(.|#|)tSmOwSO(.|#|)
+LEX: ŠTYR	(.|#|)St1r(.|#|)
+LEX: ŠTYRI	(.|#|)St1ri(.|#|)
+LEX: ŠĆE	(.|#|)StSE(.|#|)
+LEX: ŠĚS	(.|#|)Sjis(.|#|)
+LEX: ŠĚSĆ	(.|#|)SjistS(.|#|)
+
+# fake german words
+LEX: WIE (.|#|)wi(.|#|)
+LEX: SPÄT (.|#|)SpEt(.|#|)
+LEX: IST (.|#|)ist(.|#|)
+LEX: ES (.|#|)QEs(.|#|)
+
+# Sleep recognition
+GRM:	S HOTOWY:__SLEEP__
+GRM:	S DŹAKUJU:__SLEEP__
+
+# Main entry
+GRM: (S) <PAU> (S)
+GRM: (F) <PAU> (F)
+
+GRM: (S) :_LIGHTOFF_ <TURNOFF> (F)
+GRM: (S) :_LIGHTON_  <TURNON>  (F)
+
+GRM: (S) :_BRIGHTNESS_ <BRIGHTNESS> (F)
+GRM: <NUM1-100> :<NUM> NUM1-99 :</NUM>
+GRM: <NUM1-100>	:<NUM> STO:100 :</NUM>
+
+GRM: (S) :_SETCOLOR_   <COLOR>      (F)
+
+GRM: (S) :_TELLTIME_ <TIMETELL> (F)
+GRM: <TIMETELL> KAK:KAK JE:JE NA:NA ČASU:ČASU
+GRM: <TIMETELL> KAK:KAK NA:NA ČASU:ČASU JE:JE
+GRM: <TIMETELL> KAK:KAK POZDŹE:POZDŹE JE:JE
+
+GRM: (S) :_SERBSCE_ WIE:WIE SPÄT:SPÄT IST:IST ES:ES (F)
+
+GRM: (S) :_SNOOZE_ BUDŹ:BUDŹ ZMĚROM:ZMĚROM (F)
+
+# enable later
+# GRM: (S) <WAKEMEUP> (F)
+# GRM: (S) <APPOINTMENT> (F)
+
+# GRM: (S) <ACTIVITY> (ACT)
+# GRM: (ACT) :_ACT_ <ACTIVITY> (ACT)
+# GRM: (ACT) <PAU> (ACT)
+# GRM: (ACT) (F)
+
+# GRM: <TIME>    :<TIME> clock :</TIME>
+# GRM: <TIMEOPT> <TIME>, 
+# GRM: <DATE_TIME> <TIME>
+# GRM: <DATE_TIME> DATE <TIMEOPT>
+
+# GRM: <WAKEMEUP> PROŠU:PROŠU <DATE_TIME> BUDŹIĆ:BUDŹIĆ
+# GRM: <WAKEMEUP> PROŠU:PROŠU_ BUDŹ:BUDŹ_ MNJE:MNJE <DATE_TIME>
+# GRM: <WAKEMEUP> LAMPA:LAMPA_ CHCU:CHCU <DATE_TIME> STANYĆ:STANYĆ
+
+# GRM: <APPOINTMENT> LAMPA:LAMPA_ <NOTE> <ME> NOWY:NOWY_ TERMIN:TERMIN <DATE_TIME>
+# GRM: <APPOINTMENT> LAMPA:LAMPA <DATE_TIME> <FORGET> NA:NA_ <ACTIVITY>
+# GRM: <FORGET> NJEZABYĆ:NJEZABYĆ_
+# GRM: <FORGET> NJEZABUDŹ:NJEZABUDŹ_
+
+# GRM: <ACTIVITY> KOFEJ:KOFEJ, NAKUP:NAKUP, DŹĚĆI:DŹĚĆI, PÓŠTU:PÓŠTU, ZETKANJE:ZETKANJE, PARTY:PARTY
+# GRM: <NOTE> ZARJADUJ:ZARJADUJ_, ZAPISAJ:ZAPISAJ_
+# GRM: <ME> MI:MI_, 
+
+# GRM: <APPOINTMENT> ČIN:ČIN DATE <CINTIME>
+# GRM: <CINTIME>     TERMIN:TERMIN <TIME>
+# GRM: <CINTIME>     <TIME> TERMIN:TERMIN
+# GRM: <APPOINTMENT> ČIN:ČIN_ TERMIN:TERMIN <DATE_TIME>
+
+# GRM: <APPOINTMENT> <REMIND> MNJE:MNJE_ NA:NA_ <EVENT> <DATE_TIME>
+# GRM: <REMIND> DOPOMINAJ:DOPOMINAJ_
+# GRM: <REMIND> DOPOMŃ:DOPOMŃ_
+# GRM: <EVENT> NARODNINY:NARODNINY 
+# GRM: <EVENT> SWJEDŹEŃ:SWJEDŹEŃ 
+# GRM: <APPOINTMENT> LAMPA:LAMPA_ DYRBJU:DYRBJU <DATE_TIME> <DRIVE>
+# GRM: <DRIVE> WOTJĚĆ:WOTJĚĆ
+# GRM: <DRIVE> WOTJĚZDŹIĆ:WOTJĚZDŹIĆ
+
+# Intent 1 - turn lamp on/off
+## Turn on
+GRM: <TURNON> <PROSUM> LUBA:LUBA_ <LAMP> ZASWĚĆ:ZASWĚĆ_ SO:SO
+GRM: <TURNON> <LAMP> ZASWĚĆ:ZASWĚĆ_ SO:SO_ NĚTKO:NĚTKO
+GRM: <TURNON> <PROSUM> <LAMP> ZASWĚĆ:ZASWĚĆ_ SO:SO
+GRM: <TURNON> <PROSUM> <LAMP> DŹI:DŹI_ ON:ON
+GRM: <TURNON> <LAMPOPT> TRJEBAM:TRJEBAM_ SWĚCU:SWĚCU
+GRM: <TURNON> <LAMP> JE:JE_ PŘE:PŘE_ ĆMA:ĆMA
+GRM: <TURNON> <LAMP> ZASWĚĆIĆ:ZASWĚĆIĆ
+GRM: <TURNON> SWĚCU:SWĚCU_ PROŠU:PROŠU
+GRM: <TURNON> <PROSUM> ZASWĚĆ:ZASWĚĆ_ SWĚCU:SWĚCU
+GRM: <TURNON> NJEWIDŹU:NJEWIDŹU_ NIČO:NIČO	
+
+## Turn off
+GRM: <TURNOFF> <LAMP> HASŃ:HASŃ_ SO:SO
+GRM: <TURNOFF> HASŃ:HASŃ_ <PROSUM> <LAMPACC>
+GRM: <TURNOFF> <LAMPACC> :_ HASNYĆ:HASNYĆ
+GRM: <TURNOFF> <LAMP> CHCU:CHCU_ SPAĆ:SPAĆ
+GRM: <TURNOFF> <LAMP> WONKA:WONKA_ JE:JE_ SWĚTŁO:SWĚTŁO_ DOSĆ:DOSĆ
+GRM: <TURNOFF> <LAMPACC> :_ HASŃĆ:HASŃĆ_ PROŠU:PROŠU
+GRM: <TURNOFF> <LAMP2> HASNYĆ:HASNYĆ
+
+# Intent 2 - set brightness
+## dimmer
+GRM: <BRIGHTNESS> <LUBA> <LAMP> ZAĆĚMŃ:ZAĆĚMŃ_ SO:SO
+GRM: <BRIGHTNESS> <LUBA> <LAMP> ZAĆĚMNI:ZAĆĚMNI_ SO:SO
+GRM: <BRIGHTNESS> <LUBA> <LAMP> ĆĚMNIŠO:ĆĚMNIŠO_ <PROSUE>
+GRM: <BRIGHTNESS> <LUBA> <LAMP> MI:MI_ WOČI:WOČI_ BOLA:BOLA
+GRM: <BRIGHTNESS> <LUBA> <LAMP> MI:MI_ ŠĆE:ŠĆE_ PŘECO:PŘECO_ WOČI:WOČI_ BOLA:BOLA
+GRM: <BRIGHTNESS> <LAMP> ČMOWŠO:ČMOWŠO
+GRM: <BRIGHTNESS> <LAMP> KUS:KUS_ MJENJE:MJENJE
+GRM: <BRIGHTNESS> <LAMP> KUSK:KUSK_ MJENJE:MJENJE
+
+## brighter
+GRM: <BRIGHTNESS> <LAMP> JE:JE_ PŘE:PŘE_ ĆMA:ĆMA
+GRM: <BRIGHTNESS> <LAMP> ĆIŃ:ĆIŃ_ SWĚTLIŠO:SWĚTLIŠO
+GRM: <BRIGHTNESS> <LAMP> <NJ> NIČO:NIČO
+GRM: <BRIGHTNESS> <LAMP> SWĚTLIŠO:SWĚTLIŠO <PROSUE>
+GRM: <NJ> NJEWIDŹU:NJEWIDŹU_, NJESPÓZNAJU:NJESPÓZNAJU_, 
+
+## light/maximum
+GRM: <BRIGHTNESS> <LAMP> DAJ:DAJ_ WŠO:WŠO
+GRM: <BRIGHTNESS> <LAMP> NAJSWĚTLIŠO:NAJSWĚTLIŠO
+GRM: <BRIGHTNESS> <LAMP> BUDŹ:BUDŹ_ TAK:TAK_ SWĚTŁA:SWĚTŁA_ KAŽ:KAŽ_ <MS>
+GRM: <BRIGHTNESS> <LAMP> BUDŹ:BUDŹ_ CYLE:CYLE_ SWĚTŁA:SWĚTŁA
+GRM: <BRIGHTNESS> <LAMP> CYLE:CYLE_ SWĚTŁO:SWĚTŁO
+GRM: <BRIGHTNESS> <LAMP> SWĚĆ:SWĚĆ_ KAŽ:KAŽ_ SŁÓNCO:SŁÓNCO
+GRM: <BRIGHTNESS> <LAMP> CHCU:CHCU_ RADY:RADY_ ČITAĆ:ČITAĆ
+GRM: <MS> MÓŽNO:MÓŽNO, SŁÓNCO:SŁÓNCO
+
+## dark/minimum
+GRM: <BRIGHTNESS> <LAMP> SYM:SYM_ HOTOWY:HOTOWY_ Z:Z_ ČITANJOM:ČITANJOM
+GRM: <BRIGHTNESS> <LAMP> PŘITULNU:PŘITULNU_ <LAMPACC> <PROSUE>
+GRM: <BRIGHTNESS> <LAMP> TROŠKU:TROŠKU_ <RO> <PROSUE>
+GRM: <BRIGHTNESS> <LAMP> ROMANTIKU:ROMANTIKU_ PROŠU:PROŠU
+GRM: <BRIGHTNESS> <LAMP> PŘITULNU:PŘITULNU_ <LAMPACC>
+GRM: <BRIGHTNESS> <LAMP> ROMANTIKU:ROMANTIKU
+GRM: <RO> ROMANTISCE:ROMANTISCE, ROMANTIKI:ROMANTIKI 
+
+## discrete in percent
+GRM: <BRIGHTNESS> <LAMP> <DAJ> <NUM1-100> PROCENTOW:PROCENTOW <PROSUE>
+GRM: <DAJ> DAJ:DAJ, 
+
+GRM: <COLOR> <LAMPOPT> <CP> <COLHSBACC> <LIGHTACC> <PROSUE>
+GRM: <COLOR> <LAMP> <COLHSBNOM> PROŠU:PROŠU
+GRM: <COLOR> <LAMP> ČIMOL:ČIMOL <COLHSBACC> BARBU:BARBU	
+GRM: <CP> ČIN:ČIN_, POKAZAJ:POKAZAJ_, POKAŽ:POKAŽ_, 
+
+GRM: <PROSUM> PROŠU:PROŠU_, 
+GRM: <PROSUE> PROŠU:_PROŠU, 
+GRM: <LAMPOPT> 	<LAMP>, 
+GRM: <LAMP> 	LAMPA:LAMPA_
+GRM: <LAMP> 	SWĚCA:SWĚCA_
+GRM: <LAMP2>    LAMPA:LAMPA
+GRM: <LAMP2>    SWĚCU:SWĚCU
+GRM: <LAMP2>    BARBU:BARBU
+GRM: <LUBA> 	LUBA:LUBA_, 
+
+GRM: <LAMPACC> 	LAMPU:LAMPU
+GRM: <LAMPACC> 	BARBU:BARBU
+GRM: <LAMPACC> 	SWĚCU:SWĚCU
+
+GRM: <LIGHTACC> SWĚCU:SWĚCU
+GRM: <LIGHTACC> BARBU:BARBU
+GRM: <LIGHTACC> LAMPU:LAMPU
+
+#Color definitions nominativ
+GRM: <COLHSBNOM> <CZN> BĚŁE:BĚŁE_
+GRM: <COLHSBNOM> ČERWJENE:ČERWJENE_
+GRM: <COLHSBNOM> ZELENE:ZELENE_
+GRM: <COLHSBNOM> MÓDRE:MÓDRE_
+GRM: <COLHSBNOM> ORANŽOWE:ORANŽOWE_
+GRM: <COLHSBNOM> ORANŽ:ORANŽ_
+GRM: <CZN> ĆOPŁO:COPŁO_, ZYMNO:ZYMNO_, CHŁÓDNO:CHŁÓDNO_, 
+
+#Color definition accusative
+GRM: <COLHSBACC> <CZA> BĚŁU:BĚŁU_
+GRM: <COLHSBACC> ČERWJENU:ČERWJENU_
+GRM: <COLHSBACC> ZELENU:ZELENU_
+GRM: <COLHSBACC> MÓDRU:MÓDRU_
+GRM: <COLHSBACC> ORANŽOWU:ORANŽOWU_
+GRM: <COLHSBACC> ORANŽ:ORANŽ_
+GRM: <CZA> ĆOPŁO:ĆOPŁO_, ĆOPŁU:ĆOPŁU_, ZYMNO:ZYMNO_, ZYMNU:ZYMNU_, CHŁÓDNO:CHŁÓDNO_, 
